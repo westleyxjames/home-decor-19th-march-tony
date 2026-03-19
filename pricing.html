@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - PrimeNest Decor</title>
+    <meta name="description" content="Transparent pricing for home decor packages. Choose from Basic, Standard, or Premium packages with no hidden fees.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <!-- Hero -->
+        <section class="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Transparent Pricing</h1>
+                    <p class="text-xl text-gray-700">
+                        Choose the package that best fits your needs and budget. No hidden fees, no surprises.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Basic -->
+                    <div class="relative rounded-2xl p-8 bg-white border-2 border-gray-200 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-900">Basic Package</h3>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold">$99</span>
+                            </div>
+                            <p class="text-gray-600">One-time payment</p>
+                        </div>
+
+                        <div class="space-y-4 mb-8">
+                            <h4 class="font-semibold text-gray-900">What's Included:</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Room consultation (up to 1 hour)</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Style recommendations</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Color palette suggestions</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Basic furniture layout</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Shopping list of recommended items</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button onclick="openModal('contact-modal')" class="w-full py-4 rounded-lg font-medium transition-all bg-gradient-to-r from-amber-600 to-amber-700 text-white hover:from-amber-700 hover:to-amber-800 shadow-md hover:shadow-lg">
+                            Choose Basic Package
+                        </button>
+                    </div>
+
+                    <!-- Standard (Popular) -->
+                    <div class="relative rounded-2xl p-8 bg-gradient-to-br from-amber-600 to-amber-700 text-white shadow-2xl scale-105 lg:scale-110">
+                        <div class="absolute -top-5 left-1/2 -translate-x-1/2 px-6 py-2 bg-white text-amber-700 rounded-full font-semibold shadow-lg flex items-center gap-2">
+                            <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
+                            Most Popular
+                        </div>
+
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-bold mb-4 text-white">Standard Package</h3>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold">$249</span>
+                            </div>
+                            <p class="text-amber-100">One-time payment</p>
+                        </div>
+
+                        <div class="space-y-4 mb-8">
+                            <h4 class="font-semibold text-white">What's Included:</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-white"></i>
+                                    <span class="text-white">Full room styling consultation (up to 2 hours)</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-white"></i>
+                                    <span class="text-white">Comprehensive decor planning</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-white"></i>
+                                    <span class="text-white">Detailed product suggestions with links</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-white"></i>
+                                    <span class="text-white">3D room visualization</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-white"></i>
+                                    <span class="text-white">Color & material samples</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-white"></i>
+                                    <span class="text-white">Furniture arrangement plan</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-white"></i>
+                                    <span class="text-white">Lighting design</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-white"></i>
+                                    <span class="text-white">One revision included</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button onclick="openModal('contact-modal')" class="w-full py-4 rounded-lg font-medium transition-all bg-white text-amber-700 hover:bg-gray-100 shadow-lg">
+                            Choose Standard Package
+                        </button>
+                    </div>
+
+                    <!-- Premium -->
+                    <div class="relative rounded-2xl p-8 bg-white border-2 border-gray-200 shadow-lg hover:shadow-xl transition-shadow">
+                        <div class="text-center mb-8">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-900">Premium Package</h3>
+                            <div class="mb-2">
+                                <span class="text-5xl font-bold">$499</span>
+                            </div>
+                            <p class="text-gray-600">One-time payment</p>
+                        </div>
+
+                        <div class="space-y-4 mb-8">
+                            <h4 class="font-semibold text-gray-900">What's Included:</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Complete home transformation</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Custom decor solutions</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Dedicated designer throughout project</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Multiple room styling</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">3D renderings & mood boards</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Personal shopping assistance</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Installation coordination</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Project management</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">Two revisions included</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 mt-0.5 text-amber-600"></i>
+                                    <span class="text-gray-700">30-day post-completion support</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button onclick="openModal('contact-modal')" class="w-full py-4 rounded-lg font-medium transition-all bg-gradient-to-r from-amber-600 to-amber-700 text-white hover:from-amber-700 hover:to-amber-800 shadow-md hover:shadow-lg">
+                            Choose Premium Package
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add-ons -->
+        <section class="py-20 bg-gradient-to-br from-gray-50 to-amber-50/30">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Optional Add-Ons</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Enhance your package with these additional services
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold text-gray-900">Installation Services</h3>
+                            <span class="text-amber-700 font-bold">Starting at $150</span>
+                        </div>
+                        <p class="text-gray-600">Professional installation of furniture and decor items</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold text-gray-900">Additional Room</h3>
+                            <span class="text-amber-700 font-bold">$99 - $199</span>
+                        </div>
+                        <p class="text-gray-600">Add another room to your package</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold text-gray-900">Rush Service</h3>
+                            <span class="text-amber-700 font-bold">+$100</span>
+                        </div>
+                        <p class="text-gray-600">Expedited turnaround (3-5 business days)</p>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-semibold text-gray-900">Custom Furniture Design</h3>
+                            <span class="text-amber-700 font-bold">Quote-based</span>
+                        </div>
+                        <p class="text-gray-600">Bespoke furniture pieces designed for your space</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-6 rounded-xl">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">What payment methods do you accept?</h3>
+                        <p class="text-gray-700">
+                            We accept all major credit cards, debit cards, and bank transfers. Payment is typically 50% upfront and 50% upon completion.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-6 rounded-xl">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Do you offer financing options?</h3>
+                        <p class="text-gray-700">
+                            Yes, we offer flexible payment plans for projects over $500. Contact us to discuss financing options.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-6 rounded-xl">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">What if I'm not satisfied with the design?</h3>
+                        <p class="text-gray-700">
+                            We offer revisions based on your package level. Our goal is 100% satisfaction, and we'll work with you until you love the result.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-6 rounded-xl">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Are there any hidden fees?</h3>
+                        <p class="text-gray-700">
+                            No. All costs are transparent and discussed upfront. Any additional services or changes will be clearly communicated and approved before proceeding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-20 bg-gradient-to-r from-amber-600 to-amber-800 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Not Sure Which Package Is Right?</h2>
+                <p class="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
+                    Schedule a free consultation and we'll help you choose the perfect package for your needs
+                </p>
+                <button onclick="openModal('contact-modal')" class="px-8 py-4 bg-white text-amber-700 rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl text-lg font-medium">
+                    Get Free Consultation
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <!-- Modal & Cookie Banner same as other pages -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('contact-modal')">&times;</button>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Get Your Free Consultation</h2>
+            <p class="text-gray-600 mb-6">Fill out the form below and we'll get back to you within 24 hours.</p>
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                </div>
+                <div>
+                    <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service Interested In</label>
+                    <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                        <option value="">Select a service</option>
+                        <option value="interior-styling">Interior Styling</option>
+                        <option value="custom-decor">Custom Decor</option>
+                        <option value="space-makeover">Space Makeover</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"></textarea>
+                </div>
+                <button type="submit" class="w-full px-8 py-3 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all font-medium">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-gray-700">
+                We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+                <a href="cookie-policy.html" class="text-amber-700 hover:text-amber-800 underline ml-1">Learn more</a>
+            </p>
+            <div class="flex gap-3 flex-shrink-0">
+                <button onclick="rejectCookies()" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium">Reject</button>
+                <button onclick="acceptCookies()" class="px-4 py-2 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all text-sm font-medium">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/18053569285" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+        <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

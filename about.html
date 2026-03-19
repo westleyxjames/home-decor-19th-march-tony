@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PrimeNest Decor</title>
+    <meta name="description" content="Learn about PrimeNest Decor - 15+ years of expertise in premium home decor solutions.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative py-20 bg-gradient-to-br from-amber-50 to-orange-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center max-w-3xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About PrimeNest Decor</h1>
+                    <p class="text-xl text-gray-600">
+                        Transforming houses into homes with 15+ years of expertise in premium home decor solutions
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+                        <p class="text-gray-600 mb-4 text-lg">
+                            Founded in 2011, PrimeNest Decor began with a simple vision: to make premium home decor accessible to everyone. What started as a small interior styling service has grown into a full-service home transformation company serving clients across the United States.
+                        </p>
+                        <p class="text-gray-600 mb-4 text-lg">
+                            Our team of experienced designers and decorators are passionate about creating spaces that reflect your unique personality while maintaining functionality and comfort. We believe that your home should be your sanctuary - a place where you feel truly yourself.
+                        </p>
+                        <p class="text-gray-600 text-lg">
+                            Today, we're proud to have transformed over 1,000 homes and helped countless families create their dream living spaces. Our commitment to quality, creativity, and customer satisfaction remains at the heart of everything we do.
+                        </p>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080" 
+                             alt="Our team" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="py-20 bg-gradient-to-br from-gray-50 to-amber-50/30">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="w-14 h-14 bg-gradient-to-br from-amber-100 to-amber-200 rounded-xl flex items-center justify-center text-amber-700 mb-4">
+                            <i data-lucide="target" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                        <p class="text-gray-600 text-lg">
+                            To provide exceptional, affordable home decor solutions that transform living spaces into personalized sanctuaries, enhancing the quality of life for our clients through thoughtful design and superior craftsmanship.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <div class="w-14 h-14 bg-gradient-to-br from-amber-100 to-amber-200 rounded-xl flex items-center justify-center text-amber-700 mb-4">
+                            <i data-lucide="eye" class="w-7 h-7"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                        <p class="text-gray-600 text-lg">
+                            To become the most trusted name in home decor across the United States, recognized for our innovation, quality, and unwavering commitment to making beautiful living spaces accessible to everyone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-20 bg-gradient-to-r from-amber-600 to-amber-800 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Create Something Beautiful Together</h2>
+                <p class="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
+                    Ready to start your home transformation journey?
+                </p>
+                <button onclick="openModal('contact-modal')" class="px-8 py-4 bg-white text-amber-700 rounded-lg hover:bg-gray-100 transition-all shadow-xl text-lg font-medium">
+                    Get Your Free Consultation
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <!-- Contact Form Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('contact-modal')">&times;</button>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Get Your Free Consultation</h2>
+            <p class="text-gray-600 mb-6">Fill out the form below and we'll get back to you within 24 hours.</p>
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                </div>
+                <div>
+                    <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service Interested In</label>
+                    <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                        <option value="">Select a service</option>
+                        <option value="interior-styling">Interior Styling</option>
+                        <option value="custom-decor">Custom Decor</option>
+                        <option value="space-makeover">Space Makeover</option>
+                        <option value="seasonal-decoration">Seasonal Decoration</option>
+                        <option value="office-commercial">Office & Commercial Decor</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"></textarea>
+                </div>
+                <button type="submit" class="w-full px-8 py-3 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all font-medium">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-gray-700">
+                We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+                <a href="cookie-policy.html" class="text-amber-700 hover:text-amber-800 underline ml-1">Learn more</a>
+            </p>
+            <div class="flex gap-3 flex-shrink-0">
+                <button onclick="rejectCookies()" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium">Reject</button>
+                <button onclick="acceptCookies()" class="px-4 py-2 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all text-sm font-medium">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exit Intent Popup -->
+    <div id="exit-intent-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content max-w-md">
+            <button class="modal-close" onclick="closeModal('exit-intent-modal')">&times;</button>
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Wait! Don't Leave Yet!</h2>
+                <p class="text-gray-600 mb-6">Get 20% off your first consultation when you book within the next 24 hours!</p>
+                <button onclick="openModal('contact-modal'); closeModal('exit-intent-modal');" class="w-full px-8 py-3 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all font-medium mb-3">
+                    Claim Your Discount
+                </button>
+                <button onclick="closeModal('exit-intent-modal')" class="text-gray-500 hover:text-gray-700">
+                    No thanks, I'll pay full price
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/18053569285" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+        <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

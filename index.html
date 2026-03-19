@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNest Decor - Transform Your Space Into a Stylish Sanctuary</title>
+    <meta name="description" content="Premium home decor solutions tailored to your lifestyle. 15+ years of experience in interior styling, custom decor, and space makeovers.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header"></header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-[600px] md:h-[700px] flex items-center">
+            <div class="absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1703867110051-a0eb1e77b967?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080" 
+                     alt="Modern living room" 
+                     class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent"></div>
+            </div>
+
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="max-w-2xl text-white">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Transform Your Space Into a Stylish Sanctuary
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8 text-gray-100">
+                        Premium home decor solutions tailored to your lifestyle
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button onclick="openModal('contact-modal')" class="px-8 py-4 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all shadow-xl hover:shadow-2xl text-lg font-medium">
+                            Get Free Consultation
+                        </button>
+                        <a href="pricing.html" class="px-8 py-4 bg-white/10 backdrop-blur-sm border-2 border-white text-white rounded-lg hover:bg-white/20 transition-all text-lg font-medium text-center">
+                            View Pricing
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Badges -->
+        <section class="py-12 bg-gradient-to-r from-amber-50 to-amber-100/50">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold text-amber-700 mb-2">500+</div>
+                        <div class="text-gray-700">Happy Clients</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-amber-700 mb-2">15+</div>
+                        <div class="text-gray-700">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-amber-700 mb-2">1000+</div>
+                        <div class="text-gray-700">Projects Completed</div>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-amber-700 mb-2">100%</div>
+                        <div class="text-gray-700">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                        Professional home decor services designed to bring your vision to life
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1615875605825-5eb9bb5d52ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080" 
+                                 alt="Interior Styling" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Interior Styling</h3>
+                            <p class="text-gray-600 mb-4">Professional styling solutions that bring elegance and functionality to your living spaces.</p>
+                            <button onclick="openModal('contact-modal')" class="flex items-center gap-2 text-amber-700 hover:text-amber-800 font-medium">
+                                Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1609280069591-0c767e25e7a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080" 
+                                 alt="Custom Decor" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Custom Decor</h3>
+                            <p class="text-gray-600 mb-4">Unique, handcrafted decor pieces tailored to match your personal style and preferences.</p>
+                            <button onclick="openModal('contact-modal')" class="flex items-center gap-2 text-amber-700 hover:text-amber-800 font-medium">
+                                Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+                        <div class="relative h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1760072513442-9872656c1b07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1080" 
+                                 alt="Space Makeovers" 
+                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 mb-3">Space Makeovers</h3>
+                            <p class="text-gray-600 mb-4">Complete transformations that breathe new life into your home or office environment.</p>
+                            <button onclick="openModal('contact-modal')" class="flex items-center gap-2 text-amber-700 hover:text-amber-800 font-medium">
+                                Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="services.html" class="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all shadow-md hover:shadow-lg">
+                        View All Services <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Banner -->
+        <section class="py-20 bg-gradient-to-r from-amber-600 to-amber-800 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Transform Your Space?</h2>
+                <p class="text-xl mb-8 text-amber-100 max-w-2xl mx-auto">
+                    Let's create a home that reflects your style and personality. Get your free consultation today!
+                </p>
+                <button onclick="openModal('contact-modal')" class="px-8 py-4 bg-white text-amber-700 rounded-lg hover:bg-gray-100 transition-all shadow-xl hover:shadow-2xl text-lg font-medium">
+                    Schedule Free Consultation
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+
+    <!-- Contact Form Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('contact-modal')">&times;</button>
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Get Your Free Consultation</h2>
+            <p class="text-gray-600 mb-6">Fill out the form below and we'll get back to you within 24 hours.</p>
+            <form id="contact-form" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                </div>
+                <div>
+                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                </div>
+                <div>
+                    <label for="service" class="block text-sm font-medium text-gray-700 mb-1">Service Interested In</label>
+                    <select id="service" name="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent">
+                        <option value="">Select a service</option>
+                        <option value="interior-styling">Interior Styling</option>
+                        <option value="custom-decor">Custom Decor</option>
+                        <option value="space-makeover">Space Makeover</option>
+                        <option value="seasonal-decoration">Seasonal Decoration</option>
+                        <option value="office-commercial">Office & Commercial Decor</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-transparent"></textarea>
+                </div>
+                <button type="submit" class="w-full px-8 py-3 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all font-medium">
+                    Submit Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Exit Intent Popup -->
+    <div id="exit-intent-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content max-w-md">
+            <button class="modal-close" onclick="closeModal('exit-intent-modal')">&times;</button>
+            <div class="text-center">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">Wait! Don't Leave Yet!</h2>
+                <p class="text-gray-600 mb-6">Get 20% off your first consultation when you book within the next 24 hours!</p>
+                <button onclick="openModal('contact-modal'); closeModal('exit-intent-modal');" class="w-full px-8 py-3 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all font-medium mb-3">
+                    Claim Your Discount
+                </button>
+                <button onclick="closeModal('exit-intent-modal')" class="text-gray-500 hover:text-gray-700">
+                    No thanks, I'll pay full price
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-gray-700">
+                We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+                <a href="cookie-policy.html" class="text-amber-700 hover:text-amber-800 underline ml-1">Learn more</a>
+            </p>
+            <div class="flex gap-3 flex-shrink-0">
+                <button onclick="rejectCookies()" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium">
+                    Reject
+                </button>
+                <button onclick="acceptCookies()" class="px-4 py-2 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all text-sm font-medium">
+                    Accept All
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/18053569285" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+        <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

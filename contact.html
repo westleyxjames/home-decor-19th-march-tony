@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - PrimeNest Decor</title>
+    <meta name="description" content="Get in touch with PrimeNest Decor. Schedule a free consultation or ask us any questions about our home decor services.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header"></header>
+
+    <main>
+        <!-- Hero -->
+        <section class="py-20 bg-gradient-to-br from-amber-50 to-orange-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Get In Touch</h1>
+                    <p class="text-xl text-gray-700">
+                        Have a question or ready to start your project? We'd love to hear from you!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <!-- Contact Info -->
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Contact Information</h2>
+                        <p class="text-gray-700 mb-8 text-lg">
+                            Reach out to us through any of the following channels. We're here to help!
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-amber-100 to-amber-200 rounded-lg flex items-center justify-center text-amber-700 flex-shrink-0">
+                                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">Address</h3>
+                                    <p class="text-gray-700">
+                                        10222 Desert Sands St Ste 204<br>
+                                        San Antonio, TX 78116<br>
+                                        United States
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-amber-100 to-amber-200 rounded-lg flex items-center justify-center text-amber-700 flex-shrink-0">
+                                    <i data-lucide="phone" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">Phone</h3>
+                                    <a href="tel:+18053569285" class="text-amber-700 hover:text-amber-800 text-lg">
+                                        +1-805-356-9285
+                                    </a>
+                                    <p class="text-gray-600 text-sm mt-1">Click to call us directly</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-amber-100 to-amber-200 rounded-lg flex items-center justify-center text-amber-700 flex-shrink-0">
+                                    <i data-lucide="mail" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">Email</h3>
+                                    <a href="mailto:help@primenestdecor.site" class="text-amber-700 hover:text-amber-800 text-lg">
+                                        help@primenestdecor.site
+                                    </a>
+                                    <p class="text-gray-600 text-sm mt-1">We respond within 24 hours</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-amber-100 to-amber-200 rounded-lg flex items-center justify-center text-amber-700 flex-shrink-0">
+                                    <i data-lucide="clock" class="w-6 h-6"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">Business Hours</h3>
+                                    <p class="text-gray-700">
+                                        Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                        Saturday: 10:00 AM - 4:00 PM<br>
+                                        Sunday: Closed
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Map -->
+                        <div class="mt-8 rounded-2xl overflow-hidden shadow-lg">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3473.123456789!2d-98.123456!3d29.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDA3JzI0LjQiTiA5OMKwMDcnMjQuNCJX!5e0!3m2!1sen!2sus!4v1234567890"
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="PrimeNest Decor Location">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div>
+                        <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-8 rounded-2xl shadow-lg">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+
+                            <form id="main-contact-form" class="space-y-5" onsubmit="handleContactSubmit(event)">
+                                <div>
+                                    <label for="contact-name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                                    <input type="text" id="contact-name" name="name" required 
+                                           class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" 
+                                           placeholder="John Doe">
+                                </div>
+
+                                <div>
+                                    <label for="contact-email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                                    <input type="email" id="contact-email" name="email" required 
+                                           class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" 
+                                           placeholder="john@example.com">
+                                </div>
+
+                                <div>
+                                    <label for="contact-phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                                    <input type="tel" id="contact-phone" name="phone" required 
+                                           class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" 
+                                           placeholder="+1 (555) 000-0000">
+                                </div>
+
+                                <div>
+                                    <label for="contact-message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                                    <textarea id="contact-message" name="message" required rows="5" 
+                                              class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent resize-none" 
+                                              placeholder="Tell us about your project..."></textarea>
+                                </div>
+
+                                <div class="flex items-start gap-3">
+                                    <input type="checkbox" id="contact-terms" name="agreeToTerms" required 
+                                           class="mt-1 w-4 h-4 text-amber-600 border-gray-300 rounded focus:ring-amber-500">
+                                    <label for="contact-terms" class="text-sm text-gray-700">
+                                        I agree to the 
+                                        <a href="privacy-policy.html" class="text-amber-600 hover:text-amber-700 underline">Privacy Policy</a> 
+                                        & 
+                                        <a href="terms-conditions.html" class="text-amber-600 hover:text-amber-700 underline">Terms & Conditions</a> *
+                                    </label>
+                                </div>
+
+                                <button type="submit" 
+                                        class="w-full px-6 py-4 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 text-lg font-medium">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-sm text-gray-700">
+                We use cookies to enhance your browsing experience and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+                <a href="cookie-policy.html" class="text-amber-700 hover:text-amber-800 underline ml-1">Learn more</a>
+            </p>
+            <div class="flex gap-3 flex-shrink-0">
+                <button onclick="rejectCookies()" class="px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors text-sm font-medium">Reject</button>
+                <button onclick="acceptCookies()" class="px-4 py-2 bg-gradient-to-r from-amber-600 to-amber-700 text-white rounded-lg hover:from-amber-700 hover:to-amber-800 transition-all text-sm font-medium">Accept All</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/18053569285" target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+        <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            console.log('Contact form submitted:', data);
+            
+            // Show success and redirect
+            setTimeout(() => {
+                window.location.href = 'thank-you.html';
+            }, 500);
+        }
+    </script>
+</body>
+</html>
